@@ -1,5 +1,4 @@
 package Vettori;
-import java.util.FormattableFlags;
 import java.util.Scanner;
 public class vettoreCrescente {
     public static void main(String[] args) {
