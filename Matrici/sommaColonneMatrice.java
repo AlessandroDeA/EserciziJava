@@ -1,6 +1,7 @@
 package Matrici;
 import java.util.Scanner;
-public class sommaRigaMatrice {
+public class sommaColonneMatrice {
+
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class sommaRigaMatrice {
         } while (column <= 0);
     
         int[][] matrice = new int[row][column];
-        int[] vetSomme = new int [row];
+        int[] vetSomme = new int [column];
 
         for(int i = 0; i < matrice.length; i++)
         {
@@ -34,7 +35,7 @@ public class sommaRigaMatrice {
             {
                 System.out.print("Inserisci il valore per la posizione [" + i + "][" + j + "]: ");
                 matrice[i][j] = input.nextInt();
-                vetSomme[i] += matrice[i][j];
+                vetSomme[j] += matrice[i][j];
             }
         }
 
@@ -48,7 +49,7 @@ public class sommaRigaMatrice {
           System.out.println();
         }
 
-        System.out.println("La somma di ogni riga è: ");
+        System.out.println("La somma di ogni colonna è: ");
         for(int i = 0; i < vetSomme.length; i++)
         {
             System.out.printf("%-5d", vetSomme[i]);
