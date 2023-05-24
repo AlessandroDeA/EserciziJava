@@ -1,3 +1,4 @@
+package Stringhe;
 import java.util.Scanner;
 public class Punteggiatura {
     public static void main(String[] args) {
