@@ -15,7 +15,6 @@ public class ReverseWord {
             ch = parola1.charAt(i);
             parolaReverse = ch+parolaReverse;
         }
-
         System.out.println("Parola al contrario: "+ parolaReverse);
     }
 }
