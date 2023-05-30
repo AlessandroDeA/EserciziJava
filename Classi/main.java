@@ -8,7 +8,7 @@ public class main {
         double n1 = input.nextDouble();
         System.out.println("Inserisci il secondo numero: ");
         double n2 = input.nextDouble();
-        input.close();
+        
 
         Operazioni calcoli = new Operazioni(n1, n2);
         
@@ -16,5 +16,13 @@ public class main {
         calcoli.sottrazione();
         calcoli.moltiplicazione();
         calcoli.divisione();
+        
+        System.out.println();
+        System.out.println("Inserisci la base per il calcolo della potenza: ");
+        int base = input.nextInt();
+        Potenza calcoloPotenza = new Potenza(base);
+        calcoloPotenza.pow();
+        calcoloPotenza.cambiaBase();
+        input.close();
     }
 }
