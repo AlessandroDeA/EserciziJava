@@ -2,7 +2,6 @@ package Classi.Veicoli;
 
 public class TestVeicolo {
     public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Automobile miaAuto = new Automobile();
 		miaAuto.assegnaProprietario("Franco");
 		miaAuto.assegnaNumeroMatricola(151324);
