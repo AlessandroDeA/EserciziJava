@@ -11,7 +11,7 @@ public class TestTriangolo {
         else return false;
     }
 
-    protected  int peri(int i, int k, int w)
+    protected int peri(int i, int k, int w)
     {
         return i+k+w;
     }
