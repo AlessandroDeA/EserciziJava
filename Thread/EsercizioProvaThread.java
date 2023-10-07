@@ -16,7 +16,7 @@ public class EsercizioProvaThread extends Thread {
             System.out.println();
 			try 
 			{
-				sleep((int) (Math.random() * 1000));
+				sleep((int) (Math.random() * 2000));
 			}
 			catch(InterruptedException e) {}
 		}
@@ -31,6 +31,11 @@ public class EsercizioProvaThread extends Thread {
 			
 			new EsercizioProvaThread("Primo Thread").start();
 			new EsercizioProvaThread("Secondo Thread").start();
+
+			for(int i = 0; i < 10; i++)
+			{
+				System.out.println("Sono il processo padre");
+			}
 		}
 	}
 }
